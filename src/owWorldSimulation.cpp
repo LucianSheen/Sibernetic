@@ -45,8 +45,8 @@ extern bool skip_display_membranes;
 extern bool skip_display_connections;
 
 int old_x = 0, old_y = 0; // Used for mouse event
-float camera_trans[] = {0, 0, 0};
-float camera_rot[] = {90, -90, 0}; // camera rotation settings at start
+float camera_trans[] = {0, 0, -4.0};
+float camera_rot[] = {60, -90, 0}; // camera rotation settings at start
 float camera_trans_lag[] = {0, 0, -8.0};
 float camera_rot_lag[] = {0, 0, 0};
 int buttonState = 0;
