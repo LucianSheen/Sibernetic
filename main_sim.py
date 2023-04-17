@@ -16,9 +16,9 @@ quadrant3 = 'MDL'
 
 colours = {}
 colours[quadrant0] = '#000000'
-colours[quadrant1] = '#00ff00'
-colours[quadrant2] = '#0000ff'
-colours[quadrant3] = '#ff0000'
+colours[quadrant1] = '#55555'
+colours[quadrant2] = '#aaaaaa'
+colours[quadrant3] = '#ffffff'
 
 def print_(msg):
     pre = "Python >> "
