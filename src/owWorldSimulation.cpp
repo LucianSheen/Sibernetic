@@ -42,8 +42,8 @@ extern bool load_from_file;
 extern bool load_to;
 
 int old_x=0, old_y=0;	// Used for mouse event
-float camera_trans[] = {0, 0, -8.0};
-float camera_rot[]   = {0, 0, 0};
+float camera_trans[] = {0, 0, -4.0};
+float camera_rot[]   = {60, 0, 0};
 float camera_trans_lag[] = {0, 0, -8.0};
 float camera_rot_lag[] = {0, 0, 0};
 int buttonState = 0;
