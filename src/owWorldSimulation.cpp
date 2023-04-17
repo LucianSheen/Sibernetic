@@ -45,7 +45,7 @@ extern bool skip_display_membranes;
 extern bool skip_display_connections;
 
 int old_x = 0, old_y = 0; // Used for mouse event
-float camera_trans[] = {0, 0, -4.0};
+float camera_trans[] = {0, 0, -8.0};
 float camera_rot[] = {60, -90, 0}; // camera rotation settings at start
 float camera_trans_lag[] = {0, 0, -8.0};
 float camera_rot_lag[] = {0, 0, 0};
@@ -220,11 +220,11 @@ void display(void) {
           if (dc > 1.f)
             dc = 1.f;
           //  R   G   B
-          glColor4f(0, 0, 1, 1.0f); // blue
+          glColor4f(0, 0, 1, 0.3f); // blue
           if (!load_from_file) {
             if ((dc = 100 * (rho - localConfig->getConst("rho0") * 1.00f) /
                       localConfig->getConst("rho0")) > 0)
-              glColor4f(0, dc, 1, 0.3f); // cyan
+              glColor4f(0, dc, 1, 0.1f); // cyan
             if ((dc = 100 * (rho - localConfig->getConst("rho0") * 1.01f) /
                       localConfig->getConst("rho0")) > 0)
               glColor4f(0, 1, 1 - dc, 1.0f); // green
