@@ -44,7 +44,7 @@ owConfigProperty::owConfigProperty(int argc, char **argv)
   beta = ::beta;
   integrationMethod = EULER;
   std::string strTemp;
-  configFileName = "demo1"; // by default
+  configFileName = "worm"; // by default
   std::string simName = "";
   nrnSimRun = false;
   nrnSimulationFileName = "";
