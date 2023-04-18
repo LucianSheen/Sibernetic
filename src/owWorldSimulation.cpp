@@ -534,6 +534,7 @@ inline void drawScene() {
   }
   glBegin(GL_LINES);
   sc *= 10;
+  /*
   glColor3ub(255, 0, 0);
   glVertex3d(vcenter.x, vcenter.y, vcenter.z);
   glVertex3d(vcenter.x + sc, vcenter.y, vcenter.z);
@@ -543,6 +544,7 @@ inline void drawScene() {
   glColor3ub(0, 0, 255);
   glVertex3d(vcenter.x, vcenter.y, vcenter.z);
   glVertex3d(vcenter.x, vcenter.y, vcenter.z + sc);
+  */
   sc /= 10;
   vcenter = Vector3D(-(localConfig->xmin + localConfig->xmax) / 2,
                      -(localConfig->ymin + localConfig->ymax) / 2,
