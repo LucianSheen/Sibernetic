@@ -224,10 +224,10 @@ void display(void) {
           if (!load_from_file) {
             if ((dc = 100 * (rho - localConfig->getConst("rho0") * 1.00f) /
                       localConfig->getConst("rho0")) > 0)
-              glColor4f(0, dc, 1, 0.1f); // cyan
+              glColor4f(0, dc, 1, 0.01f); // cyan
             if ((dc = 100 * (rho - localConfig->getConst("rho0") * 1.01f) /
                       localConfig->getConst("rho0")) > 0)
-              glColor4f(0, 1, 1 - dc, 1.0f); // green
+              glColor4f(0, 1, 1 - dc, 0.5f); // green
             if ((dc = 100 * (rho - localConfig->getConst("rho0") * 1.02f) /
                       localConfig->getConst("rho0")) > 0)
               glColor4f(dc, 1, 0, 1.0f); // yellow
