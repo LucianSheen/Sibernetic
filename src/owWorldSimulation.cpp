@@ -522,7 +522,7 @@ inline void drawScene() {
   vbox[6] = Vector3D(localConfig->xmax, localConfig->ymax, localConfig->zmax);
   vbox[7] = Vector3D(localConfig->xmin, localConfig->ymax, localConfig->zmax);
   // Display user interface if enabled
-  bool displayInfos = true;
+  bool displayInfos = false;
   if (displayInfos) {
   std::cout << "S1d\n";
     glDisable(GL_DEPTH_TEST);
