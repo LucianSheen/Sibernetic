@@ -388,7 +388,7 @@ void display(void) {
             glColor4b(250 / 2, 250 / 2, 200 / 2, 255 / 2); // agar
           }
           if ((p_cpp[i * 4 + 3] > 2.31) && (p_cpp[i * 4 + 3] < 2.33))
-            glColor4b(200 / 2, 250 / 2, 000 / 2,
+            glColor4b(230 / 2, 100 / 2, 100 / 2,
                       255 / 2); // agar particles which contacted the worm
           glVertex3f((p_cpp[i * 4 + 0] - localConfig->xmax / 2) * sc,
                      (p_cpp[i * 4 + 1] - localConfig->ymax / 2) * sc,
@@ -399,7 +399,7 @@ void display(void) {
           if (p_cpp[j * 4 + 3] > 2.25)
             glColor4b(250 / 2, 250 / 2, 200 / 2, 255 / 2); // agar
           if ((p_cpp[j * 4 + 3] > 2.31) && (p_cpp[j * 4 + 3] < 2.33))
-            glColor4b(230 / 2, 145 / 2, 204 / 2,
+            glColor4b(230 / 2, 100 / 2, 100 / 2,
                       255 / 2); // agar particles which contacted the worm
           glVertex3f((p_cpp[j * 4 + 0] - localConfig->xmax / 2) * sc,
                      (p_cpp[j * 4 + 1] - localConfig->ymax / 2) * sc,
@@ -411,7 +411,7 @@ void display(void) {
   }
   // Draw membranes
   if (!skip_display_membranes) {
-      glColor4b(0, 150, 100, 255 / 2 /*alpha*/);
+      glColor4b(0, 110, 60, 255 / 2 /*alpha*/);
       for (unsigned int i_m = 0; i_m < localConfig->numOfMembranes; ++i_m) {
         i = md_cpp[i_m * 3 + 0];
         j = md_cpp[i_m * 3 + 1];
