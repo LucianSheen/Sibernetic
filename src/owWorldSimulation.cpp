@@ -381,7 +381,7 @@ void display(void) {
         } else { // ordinary springs
           glLineWidth((GLfloat)0.1);
           glBegin(GL_LINES);
-          glColor4b(150 / 2, 125 / 2, 0, 100 / 2);
+          glColor4b(48, 129, 222, 85);
           if (p_cpp[i * 4 + 3] > 2.15)
             glColor4b(50 / 2, 125 / 2, 0, 255 / 2);
           if (p_cpp[j * 4 + 3] > 2.25) {
@@ -512,14 +512,14 @@ inline void drawScene() {
     }
     ++order;
   }
-  vbox[0] = Vector3D(localConfig->xmin, localConfig->ymin, localConfig->zmin);
-  vbox[1] = Vector3D(localConfig->xmax, localConfig->ymin, localConfig->zmin);
-  vbox[2] = Vector3D(localConfig->xmax, localConfig->ymax, localConfig->zmin);
-  vbox[3] = Vector3D(localConfig->xmin, localConfig->ymax, localConfig->zmin);
-  vbox[4] = Vector3D(localConfig->xmin, localConfig->ymin, localConfig->zmax);
-  vbox[5] = Vector3D(localConfig->xmax, localConfig->ymin, localConfig->zmax);
-  vbox[6] = Vector3D(localConfig->xmax, localConfig->ymax, localConfig->zmax);
-  vbox[7] = Vector3D(localConfig->xmin, localConfig->ymax, localConfig->zmax);
+  vbox[0] = Vector3D(0, 0, 0);
+  vbox[1] = Vector3D(88.844, 0, 0);
+  vbox[2] = Vector3D(88.844, 88.844, 0);
+  vbox[3] = Vector3D(0, 88.844, 0);
+  vbox[4] = Vector3D(0, 0, 88.844);
+  vbox[5] = Vector3D(88.844, 0, 88.844);
+  vbox[6] = Vector3D(88.844, 88.844, 88.844);
+  vbox[7] = Vector3D(0, 88.844, 88.844);
   // Display user interface if enabled
   bool displayInfos = true;
   if (displayInfos) {
