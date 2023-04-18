@@ -512,14 +512,15 @@ inline void drawScene() {
     }
     ++order;
   }
-  vbox[0] = Vector3D(0, 0, 0);
-  vbox[1] = Vector3D(88.844, 0, 0);
-  vbox[2] = Vector3D(88.844, 88.844, 0);
-  vbox[3] = Vector3D(0, 88.844, 0);
-  vbox[4] = Vector3D(0, 0, 88.844);
-  vbox[5] = Vector3D(88.844, 0, 88.844);
-  vbox[6] = Vector3D(88.844, 88.844, 88.844);
-  vbox[7] = Vector3D(0, 88.844, 88.844);
+  
+  vbox[0] = Vector3D(localConfig->xmin, localConfig->ymin, localConfig->zmin);
+  vbox[1] = Vector3D(localConfig->xmax, localConfig->ymin, localConfig->zmin);
+  vbox[2] = Vector3D(localConfig->xmax, localConfig->ymax, localConfig->zmin);
+  vbox[3] = Vector3D(localConfig->xmin, localConfig->ymax, localConfig->zmin);
+  vbox[4] = Vector3D(localConfig->xmin, localConfig->ymin, localConfig->zmax);
+  vbox[5] = Vector3D(localConfig->xmax, localConfig->ymin, localConfig->zmax);
+  vbox[6] = Vector3D(localConfig->xmax, localConfig->ymax, localConfig->zmax);
+  vbox[7] = Vector3D(localConfig->xmin, localConfig->ymax, localConfig->zmax);
   // Display user interface if enabled
   bool displayInfos = true;
   if (displayInfos) {
