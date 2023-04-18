@@ -411,7 +411,7 @@ void display(void) {
   }
   // Draw membranes
   if (!skip_display_membranes) {
-      glColor4b(0, 40, 64, 80 /*alpha*/);
+      glColor4b(0, 50, 80, 80 /*alpha*/);
       for (unsigned int i_m = 0; i_m < localConfig->numOfMembranes; ++i_m) {
         i = md_cpp[i_m * 3 + 0];
         j = md_cpp[i_m * 3 + 1];
