@@ -1,0 +1,8 @@
+this is a setup procedure for running sibernetic
+
+cd Desktop/sibernetic
+LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH
+export C302_HOME=./CElegansNeuroML/CElegans/pythonScripts/c302
+export PYTHONPATH=$PYTHONPATH:$C302_HOME:./src
+python3 sibernetic_c302 -duration <1000> -configuration <worm_crawling>
+./Release/Sibernetic -l_from lpath=simulations/<simulation_name>
